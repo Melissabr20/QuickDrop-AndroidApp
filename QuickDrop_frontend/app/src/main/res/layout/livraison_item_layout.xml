@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:id="@+id/parent"
+    android:focusable="true"
+    android:background="@drawable/rounded_corners"
+    android:foreground="?android:attr/selectableItemBackground">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <androidx.cardview.widget.CardView
+
+            android:layout_height="70dp"
+            android:layout_width="80dp"
+            android:id="@+id/detailsview2"
+            app:cardCornerRadius="10dp"
+            android:layout_below="@id/textview2">
+
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/order_four"
+                 />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview2"
+            android:id="@+id/infos"
+            android:layout_marginStart="19dp"
+            android:layout_toRightOf="@id/detailsview2"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48px"
+                android:fontFamily="@font/inter_regular"
+                android:text="Le client Mohammed a lancé une livraison" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+Django==5.0.2
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
+django-crispy-forms
+crispy-bootstrap4
+requests
+geopy
+ortools
+mysqlclient

@@ -1,0 +1,6 @@
+## Copy this file to local.properties and fill in values for your machine.
+## Android Studio usually manages sdk.dir automatically.
+
+sdk.dir=C\:\\Users\\YOUR_NAME\\AppData\\Local\\Android\\Sdk
+# No maps API key needed: the app uses osmdroid (OpenStreetMap) + OSRM, both free
+# and open-source. See core/map/ for details.

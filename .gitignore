@@ -1,0 +1,47 @@
+### Android / Gradle (frontend) ###
+*.iml
+.gradle
+/local.properties
+local.properties
+local.properties.*
+!local.properties.example
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.idea/
+/build
+app/build/
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+*.keystore
+*.jks
+
+### Python / Django (backend) ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+*.log
+db.sqlite3
+db_test_only.sqlite3
+venv/
+env/
+.venv/
+*.pot
+local_settings.py
+media/uploads/
+docs/
+
+### Shared / editors / OS ###
+.vscode/
+.DS_Store
+Thumbs.db
+.dist/
+dist/
+*.egg-info/

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">QuickDrop</string>
+    <string name="home_icon_description">Home Icon</string>
+    <string name="wish_icon_description">Wish Icon</string>
+    <string name="profile_icon_description">Profile Icon</string>
+    <string name="cart_icon_description">Cart Icon</string>
+
+    <string name="job_success">Job Success</string>
+    <string name="my_desc">my desc</string>
+
+    <string name="about_us">About Us</string>
+    <string name="contact">Contact</string>
+
+    <string name="ratings">Star Ratings</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

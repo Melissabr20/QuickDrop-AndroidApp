@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- dialog_layout.xml -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@drawable/rounded_corners">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="36px"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Deliver to"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/adresseLivraison"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="address livraison"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:textSize="32px"
+            android:fontFamily="@font/inter_regular"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/client_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_marginTop="5px"
+                    android:layout_marginRight="50px"
+                    android:src="@drawable/img_1"
+                    app:tint="#777777" />
+
+                <TextView
+                    android:id="@+id/prixLivrison"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/text_color"
+                    android:text="Tarif Livraison"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+                <TextView
+                    android:id="@+id/livraisonprix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 DA "
+                    android:textColor="@color/quantum_bluegrey500"
+                    android:fontFamily="@font/inter_regular"
+
+
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/adr_four">
+
+                <ImageView
+                    android:layout_width="55px"
+                    android:layout_height="55px"
+                    android:layout_marginTop="5px"
+                    android:layout_marginRight="50px"
+                    android:src="@drawable/checkout"
+                    app:tint="#777777" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color"
+                    android:textSize="40px"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Your order" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+
+
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/items"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total"
+                        android:textSize="40px"
+                        android:id="@+id/totalPriceView2"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/black"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="2dp"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2000 DA"
+                        android:textSize="37px"
+                        android:fontFamily="@font/inter_semibold"
+                        android:textColor="@color/quantum_bluegrey500"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

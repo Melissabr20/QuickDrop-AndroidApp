@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <FrameLayout
+        android:id="@+id/map_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <org.osmdroid.views.MapView
+                android:id="@+id/myMap"
+                android:layout_width="wrap_content"
+                android:layout_height="670px"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/nav_bar"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="6dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/playIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/menu"
+                app:tint="@color/text_color"
+                android:contentDescription="Start Icon" />
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</RelativeLayout>

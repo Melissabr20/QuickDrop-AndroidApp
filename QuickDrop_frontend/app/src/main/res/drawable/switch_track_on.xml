@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <corners android:radius="24dp"/> <!-- Rounded corners for the track -->
+    <solid android:color="#D8D7D7"/> <!-- Green color for "on" state -->
+</shape>
+

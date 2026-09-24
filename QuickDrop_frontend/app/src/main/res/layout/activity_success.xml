@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/white"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".SuccessActivity">
+
+    <ImageView
+        android:id="@+id/successIcon"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/success" />
+
+    <TextView
+        android:id="@+id/successText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/successIcon"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Commande passée avec succès"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/orderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/successText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Votre commande a été traitée avec succès et sera bientôt livrée."
+        android:textColor="@color/gris"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/continueShopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderDetails"
+        android:layout_marginStart="16dp"
+        android:padding="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Continuer vos achats"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/button_color"/>
+
+
+
+</RelativeLayout>

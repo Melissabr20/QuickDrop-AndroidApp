@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Administrateur"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+
+
+
+        android:background="@drawable/edittext_background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+
+            >
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="Fournisseurs"
+                android:id="@+id/Fournisseurs"
+                >
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="95px"
+                    android:layout_marginTop="5px"
+                    android:src="@drawable/le_fournisseur"
+                    app:tint="@color/button_color"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45px"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10px"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Fournisseurs" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:contentDescription="Livreurs"
+                android:id="@+id/Livreur"
+
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="95px"
+                    android:layout_marginTop="5px"
+                    android:src="@drawable/img_1"
+                    app:tint="@color/button_color"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45px"                    android:textColor="@color/black"
+                    android:layout_marginTop="10px"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Livreurs" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp">
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:clickable="true"
+                android:contentDescription="Client"
+                android:id="@+id/client"
+
+
+                >
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="95px"
+                    android:layout_marginTop="5px"
+                    android:src="@drawable/ic_baseline_person_24"
+                    app:tint="@color/button_color"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45px"                    android:textColor="@color/black"
+                    android:layout_marginTop="10px"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Client" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                />
+            <LinearLayout
+                android:layout_width="120dp"
+
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:contentDescription="Users"
+                android:id="@+id/users"
+
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="95px"
+                    android:layout_marginTop="5px"
+                    android:src="@drawable/profile"
+                    app:tint="@color/button_color"
+                    />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45px"                    android:textColor="@color/black"
+                    android:layout_marginTop="10px"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="All Users"
+
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+
+            >
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:contentDescription="article"
+                android:id="@+id/article"
+
+                >
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="95px"
+                    android:layout_marginTop="5px"
+                    android:src="@drawable/cart"
+                    app:tint="@color/button_color"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45px"                    android:textColor="@color/black"
+                    android:layout_marginTop="10px"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Article" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:contentDescription="Livraison"
+                android:id="@+id/Livraison"
+
+
+
+                android:gravity="center"
+                android:layout_gravity="center"
+                >
+                <ImageView
+                    android:layout_width="125px"
+                    android:layout_height="95px"
+                    android:layout_marginTop="5px"
+                    android:src="@drawable/order"
+                    app:tint="@color/button_color"/>
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="45px"                    android:textColor="@color/black"
+                    android:layout_marginTop="10px"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Orders" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

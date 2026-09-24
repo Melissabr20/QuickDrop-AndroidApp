@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:background="@drawable/rounded_corners"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- dialog_layout.xml -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/rounded_corners">
+
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="36px"
+            android:fontFamily="@font/inter_semibold"
+            android:text="You arrived to vilpo!"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/dialog_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="#delivrerID"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:textSize="32px"
+            android:fontFamily="@font/inter_regular"/>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/themotherrecyclerview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/dialog_button_pick"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:backgroundTint="@color/green"
+            android:textSize="32px"
+            android:fontFamily="@font/inter_medium"
+            android:text="Pick Up"
+            android:layout_gravity="center"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

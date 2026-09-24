@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_border"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/prdimg"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:src="@drawable/vocalsearch" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prdname"
+            android:fontFamily="@font/lora_bold"
+            android:layout_marginTop="10dp"
+            android:paddingTop="6dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:text="Gaming"
+            android:textSize="15sp"
+            android:paddingBottom="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prdprice"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingTop="6dp"
+                android:text="Gaming"
+                android:textSize="15sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_semibold"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="4dp"
+                android:paddingTop="6dp"
+                android:text="DZD"
+                android:textSize="15sp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

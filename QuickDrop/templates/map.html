@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Leaflet: free, open-source map library (OpenStreetMap tiles), no API key needed -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+    let map
+
+    function initMap(){
+
+        var locations_livreur = {{ locations_livreur|safe}};
+        var locations_client = {{ locations_client|safe }}
+        var locations_store = {{ locations_store|safe }}
+
+        var firstLocation = locations_livreur[0] || locations_client[0] || locations_store[0] || {lat: 0, lng: 0}
+
+        map = L.map('map').setView([firstLocation.lat, firstLocation.lng], 8);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        function addMarkers(locations) {
+            locations.forEach(function (location) {
+                L.marker([location.lat, location.lng])
+                    .addTo(map)
+                    .bindPopup(String(location.name));
+            });
+        }
+
+        addMarkers(locations_livreur);
+        addMarkers(locations_client);
+        addMarkers(locations_store);
+    }
+
+    window.addEventListener('DOMContentLoaded', initMap)
+
+</script>
+
+<div class="pageholder">
+    <div class="titleholder"> 
+        
+        <div class="title"> Delivery Map (OpenStreetMap / Leaflet) </div> 
+
+        {% if user.is_authenticated %}
+        <div><a class="nav-link" href="{% url 'logout' %}">LOGout </a></div>
+        <div><a class="nav-link" href="{% url 'update' %}">update </a></div>
+        {% else %}
+        <div><a class="nav-link" href="{% url 'login' %}">LOGIN</a></div>
+        <div><a class="nav-link" href="{% url 'register' %}">REGISTER</a></div>
+        {% endif %}
+        
+    </div>
+
+    <div id="map" style="height: 400px; width: 100%;"></div>
+
+
+</div>
+
+<div class="pageholder">
+    <div class="titleholder"> 
+        
+        <div class="title"> Delivery Data </div> 
+        
+    </div>
+ 
+
+    <div class="linkholder">
+            <h3 class="title2">client</h3>
+            <table id="ourtable3" class="myTable m-3">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>lng</th>
+                        <th>lat</th>
+                       
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for a in clients %}
+                    <tr>
+                        <td> {{a.id_client.first_name}} </td>
+                        <td> {{a.city}} </td>
+                        <td> {{a.country}} </td>
+                        <td> {{a.lng}} </td>
+                        <td> {{a.lat}} </td>
+                    </tr>
+
+                    {% endfor%}
+                </tbody>   
+            </table>
+            <h3 class="title2">market</h3>
+            <table id="ourtable3" class="myTable m-3">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Adress</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>lng</th>
+                        <th>lat</th>
+                        <th>distance link</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for a in stores %}
+                    <tr>
+                        <td> {{a.id}} </td>
+                        <td> {{a.name}} </td>
+                        <td> {{a.adress}} </td>
+                        <td> {{a.city}} </td>
+                        <td> {{a.country}} </td>
+                        <td> {{a.lng}} </td>
+                        <td> {{a.lat}} </td>
+                        <td> <a href="{% url 'my_distance_view' a.id %}"> distance!</a> </td>
+                    </tr>
+
+                    {% endfor%}
+                </tbody>   
+            </table>
+            <h3 class="title2">livreur</h3>
+            <table id="ourtable3" class="myTable m-3">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Adress</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>lng</th>
+                        <th>lat</th>
+                       
+                    </tr>
+                </thead>
+
+                <tbody>
+                    {% for a in livreurs %}
+                    <tr>
+                        <td> {{a.id}} </td>
+                        <td> {{a.name}} </td>
+                        <td> {{a.adress}} </td>
+                        <td> {{a.city}} </td>
+                        <td> {{a.country}} </td>
+                        <td> {{a.lng}} </td>
+                        <td> {{a.lat}} </td>
+                    </tr>
+
+                    {% endfor%}
+                </tbody>   
+            </table>
+     </div>
+{% endblock %}

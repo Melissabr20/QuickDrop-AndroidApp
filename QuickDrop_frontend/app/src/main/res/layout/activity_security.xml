@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Security"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="10dp"
+            android:id="@+id/BackBtn"
+            android:clickable="true"
+            android:contentDescription="back"
+
+            android:src="@drawable/ic_arrow_back_24dp"
+
+            />
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:textColor="#293859"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="20dp"
+
+        android:orientation="vertical">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Mot de passe actuel:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Mot de passe actuel"
+
+            app:passwordToggleEnabled="true"
+
+
+            app:boxStrokeColor="@color/icon_color"
+            app:passwordToggleTint="@color/icon_color"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Nouveau mot de passe:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/newpassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Nouveau mot de passe:"
+
+            app:passwordToggleEnabled="true"
+
+
+            app:boxStrokeColor="@color/icon_color"
+            app:passwordToggleTint="@color/icon_color"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Confirmer le nouveau mot de passe:"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:hint="Confirmer le nouveau mot de passe"
+
+            app:passwordToggleEnabled="true"
+
+
+            app:boxStrokeColor="@color/icon_color"
+            app:passwordToggleTint="@color/icon_color"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/btnchangepassword"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/dm_medium"
+            android:gravity="center"
+
+            android:padding="10dp"
+            android:text="Confirmer"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/orange"
+            app:cornerRadius="15dp"
+
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

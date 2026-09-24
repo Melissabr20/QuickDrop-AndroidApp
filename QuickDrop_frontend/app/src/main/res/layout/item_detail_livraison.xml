@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- dialog_layout.xml -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@drawable/rounded_corners">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="48px"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Details de livraison"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/client_name"
+            android:layout_marginTop="33dp"
+            android:layout_marginBottom="15dp"
+
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+                    android:layout_marginTop="5px"
+                    android:layout_marginRight="10px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_edit_location_alt_24"
+                    app:tint="@color/blue" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+
+                    android:background="@drawable/rounded_corners">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40px"
+
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="@color/text_color"
+                    android:text="Adresse de livraison"
+                    />
+
+                    <TextView
+                        android:id="@+id/addressLivrison"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="40px"
+                        android:fontFamily="@font/inter_semibold"
+                        android:textColor="@color/text_color"
+                        android:text="Adresse de livraison"
+                        />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/modifieraddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="modifier "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter_regular"
+                    android:backgroundTint="@color/grey"
+
+                    android:textSize="14sp"
+                    />
+
+
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/dialog_terminer"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8px"
+            android:backgroundTint="@color/orange"
+            android:textSize="40px"
+            android:fontFamily="@font/inter_medium"
+            android:text="Terminé"
+            android:layout_gravity="center"
+            app:cornerRadius="8dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

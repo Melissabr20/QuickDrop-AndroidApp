@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:id="@+id/location_info"
+        >
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:id="@+id/location_icon"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/pointeurdelocalisation"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_title"
+                android:textSize="19dp"
+                android:text="supplier/client adress"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="deliver the orderID"
+                android:textSize="18dp"
+                android:id="@+id/location_text"
+                android:layout_below="@id/location_title"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/goodgrey"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/location_info"/>
+
+</RelativeLayout>

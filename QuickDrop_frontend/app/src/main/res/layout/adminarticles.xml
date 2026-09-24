@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    tools:context=".AddPutArticle"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/prdimg"
+            android:layout_width="101dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/img" />
+
+        <ImageView
+            android:id="@+id/select_image"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            app:tint="@color/button_color"
+
+
+            android:clickable="true"
+            android:contentDescription="Selectimage"
+            android:src="@drawable/baseline_add_a_photo_24" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_border"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_semibold"
+            android:paddingTop="6dp"
+            android:paddingBottom="5dp"
+            android:text="Product name : "
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/prdname"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/round_border"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:hint="Username"
+            android:paddingStart="12dp"
+
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_border"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingTop="6dp"
+                android:paddingBottom="5dp"
+                android:text="Product price : "
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/prdprice"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="@drawable/round_border"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:hint="price"
+                android:paddingStart="12dp"
+
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingTop="6dp"
+                android:paddingBottom="5dp"
+                android:text="DA "
+                android:textSize="16sp"  />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/inter_semibold"
+                android:paddingBottom="5dp"
+                android:text="Description de l'article :"
+
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/prddesignation"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/round_border"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:hint="description"
+                android:paddingStart="12dp"
+
+                android:paddingEnd="12dp"
+                android:paddingBottom="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderDetails"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/button_color"
+            android:padding="15dp"
+            android:text="CONFIRM"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/inter_bold"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

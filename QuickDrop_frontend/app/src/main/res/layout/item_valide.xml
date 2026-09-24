@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <!-- Image du produit -->
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/order2"
+            app:tint="@color/goodgrey"
+            android:background="@drawable/rounded_corners"/>
+
+        <!-- Conteneur pour les détails du produit -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_marginStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50px"
+                    android:layout_height="50px"
+
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30px"
+                    android:src="@drawable/order"
+                    app:tint="@color/goodgrey"
+                    />
+                <TextView
+                    android:id="@+id/idorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="id order "
+                    android:gravity="center"
+                    android:textSize="20sp"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                >
+                <ImageView
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30px"
+                    android:src="@drawable/ic_call_24dp"
+                    app:tint="@color/goodgrey"
+                    />
+                <TextView
+                    android:id="@+id/livreurnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/quantum_bluegrey500"
+                    />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/etat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="preparation "
+
+                android:fontFamily="@font/inter_medium"
+                android:textSize="18sp"
+                android:textColor="@color/text_color"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

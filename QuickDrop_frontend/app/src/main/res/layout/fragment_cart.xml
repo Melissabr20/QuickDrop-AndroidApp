@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CartFragment"
+    android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back_24dp"
+
+                    />
+
+                <Space
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Panier"
+                    android:textColor="#293859"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cartrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:layout_below="@id/topbar"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/black"
+                android:backgroundTint="@color/gris" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:text="Montant : "
+                    android:textSize="18sp" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/totalpriece"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lora_bold"
+                    android:padding="16dp"
+                    android:text="0 DZD "
+
+
+                    android:textColor="@color/gris"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/buttonCheckout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/orderDetails"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/button_color"
+                android:fontFamily="@font/inter_semibold"
+                android:padding="15dp"
+                android:text="Valider"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                app:cornerRadius="8dp" />
+
+    </LinearLayout>
+</RelativeLayout>

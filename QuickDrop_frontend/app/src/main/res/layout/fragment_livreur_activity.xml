@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".LivreurActivityFragment">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/profil_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+
+            android:textSize="30dp"
+            android:text="Hi, Melissa Bourou" />
+
+        <TextView
+            android:id="@+id/liv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="50px"
+            android:text="Bonne route!" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/profil_info"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:id="@+id/status"
+        >
+
+        <TextView
+            android:id="@+id/personalinfobtn"
+            android:layout_width="315dp"
+            android:layout_height="48dp"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:fontFamily="@font/inter_semibold"
+            android:padding="10dp"
+            android:text="Accepter des livraisons"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:id="@+id/on_off_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:checked="true"
+            android:thumb="@drawable/switch_thumb_selector"
+            android:track="@drawable/switch_track_selector" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_below="@id/status"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

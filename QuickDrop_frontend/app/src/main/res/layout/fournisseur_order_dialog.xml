@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginTop="5px"
+                android:layout_marginRight="65px"
+                android:src="@drawable/order"
+                app:tint="#777777" />
+
+            <TextView
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40px"
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/text_color"
+                android:text="id order" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/adr_four">
+
+            <ImageView
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:layout_marginTop="5px"
+                android:layout_marginRight="65px"
+                android:src="@drawable/checkout"
+                app:tint="#777777" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_color"
+                android:textSize="40px"
+                android:fontFamily="@font/inter_regular"
+                android:text="La commande" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerview_order_dialog">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textSize="40px"
+
+                android:fontFamily="@font/inter_regular"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2000 DA"
+                android:textSize="43px"
+                android:id="@+id/totalPriceView2"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="#536670"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="60px"
+                android:backgroundTint="@color/orange"
+                android:text="Confirmer"
+                android:textSize="16dp"
+                android:id="@+id/acceptBtn"
+                app:cornerRadius="8dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

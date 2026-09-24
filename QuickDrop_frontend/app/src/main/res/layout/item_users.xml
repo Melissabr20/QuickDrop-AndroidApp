@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:clickable="true"
+    android:id="@+id/parent"
+    android:focusable="true"
+    android:backgroundTint="@color/white"
+
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        android:id="@+id/detailsview2"
+        app:cardCornerRadius="10dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="User"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_2"
+            android:layout_gravity="center"
+            app:tint="@color/blue"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_toRightOf="@id/detailsview2"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order"
+            android:layout_marginTop="4dp"
+            >
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginTop="5px"
+                android:layout_marginRight="30px"
+                android:src="@drawable/ic_baseline_person_24"
+                android:layout_gravity="center"
+                app:tint="@color/blue"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="45px"
+                android:layout_marginTop="5px"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:text="name" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/order"
+            >
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginTop="5px"
+                android:layout_marginRight="30px"
+                android:src="@drawable/ic_email_24dp"
+                android:layout_gravity="center"
+                app:tint="@color/blue"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="45px"
+                android:layout_marginTop="5px"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:text="email" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/adr_four">
+
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_marginTop="5px"
+                android:layout_marginRight="30px"
+                android:src="@drawable/baseline_call_24"
+                android:layout_gravity="center"
+                app:tint="@color/blue"/>
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="45px"
+                android:layout_marginTop="5px"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:text="numero " />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/deleteButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:tint="@color/blue"
+        android:contentDescription="delete"
+
+        android:clickable="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/baseline_close_24"
+   />
+
+
+</RelativeLayout>
